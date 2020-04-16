@@ -7,7 +7,8 @@
 // @lc code=start
 class Solution {
     public int[] productExceptSelf(int[] nums) {
-     /*   int[] fwd = new int[nums.length];
+        // APPROACH 1
+        /*   int[] fwd = new int[nums.length];
         int[] bw = new int[nums.length];
         int len = nums.length;
         fwd[0]=nums[0];
@@ -29,6 +30,8 @@ class Solution {
         }
         return nums;
         */
+
+       // APPROACH 2 WITH ONE ARRAY (LESS SPACE) 
      int len = nums.length;
      int[] fwd = new int[len];
      fwd[0] = nums[0];
