@@ -1,5 +1,3 @@
-import sun.security.util.Length;
-
 /*
  * @lc app=leetcode id=122 lang=java
  *
@@ -22,6 +20,8 @@ class Solution {
             
         }
         return profit;
+ 
     }
 }
 // @lc code=end
+
