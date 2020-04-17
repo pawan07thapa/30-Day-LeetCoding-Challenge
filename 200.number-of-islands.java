@@ -27,11 +27,12 @@ class Solution {
         if (grid[cr][cc] == '0' || grid[cr][cc] == '2')
             return;
 
+        grid[cr][cc] = '2';
         travelRecusively(cr + 1, cc, grid);
         travelRecusively(cr, cc + 1, grid);
         travelRecusively(cr - 1, cc, grid);
         travelRecusively(cr, cc - 1, grid);
-        grid[cr][cc] = '2';
+       
 
         return;
     }
